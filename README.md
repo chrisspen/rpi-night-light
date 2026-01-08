@@ -39,6 +39,31 @@ sudo dpkg -i build/rpi-night-light_*.deb
 ```
 
 If `sunwait` isn't available via apt, the package post-install will build it from source.
+The .deb pulls `build-essential`, `curl`, and `ca-certificates` so the build works without invoking apt inside the postinst.
+
+## APT repo (GitHub Pages)
+
+Generate a simple APT repo from your .deb:
+
+```sh
+./build-apt-repo.sh build/rpi-night-light_*.deb
+```
+
+Publish `apt/` to GitHub Pages (recommended: `gh-pages` branch) and enable Pages in the repo settings.
+
+Update the APT repo (build .deb, regenerate `apt/`, push to `gh-pages`):
+
+```sh
+./build-and-publish-apt-repo.sh
+```
+
+Client install:
+
+```sh
+echo \"deb [trusted=yes] https://chrisspen.github.io/rpi-night-light/apt ./\" | sudo tee /etc/apt/sources.list.d/rpi-night-light.list
+sudo apt update
+sudo apt install rpi-night-light
+```
 
 ## Manual test
 

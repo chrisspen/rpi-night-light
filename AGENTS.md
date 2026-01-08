@@ -101,6 +101,12 @@ Check:
 - `systemctl status --no-pager monitor-sun.service`
 - `journalctl -u monitor-sun.service -n 100 --no-pager`
 
+### 5) Packaging and APT Repo
+Scripts in the repo root:
+- `build-deb.sh` builds `build/rpi-night-light_<version>_all.deb`.
+- `build-apt-repo.sh` generates an APT repo in `apt/`.
+- `build-and-publish-apt-repo.sh` builds a fresh `.deb`, regenerates `apt/`, and pushes it to `gh-pages`.
+
 ---
 
 ## Operating Procedures

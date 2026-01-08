@@ -2,3 +2,4 @@
 *.geany
 build/
 *.deb
+apt/

@@ -5,7 +5,6 @@ build_sunwait() {
   tmpdir=$(mktemp -d)
   trap 'rm -rf "$tmpdir"' EXIT
 
-  apt-get install -y build-essential ca-certificates curl
   curl -fsSL "https://github.com/risacher/sunwait/archive/refs/heads/master.tar.gz" -o "$tmpdir/sunwait.tar.gz"
   tar -xzf "$tmpdir/sunwait.tar.gz" -C "$tmpdir"
   make -C "$tmpdir/sunwait-master"
@@ -13,12 +12,10 @@ build_sunwait() {
 }
 
 if ! command -v sunwait >/dev/null 2>&1; then
-  if command -v apt-get >/dev/null 2>&1; then
-    if ! apt-get install -y sunwait; then
-      build_sunwait
-    fi
+  if command -v make >/dev/null 2>&1 && command -v curl >/dev/null 2>&1; then
+    build_sunwait
   else
-    echo "sunwait is required but apt-get is unavailable." >&2
+    echo "sunwait is required but build tools are missing. Install build-essential and curl." >&2
     exit 1
   fi
 fi
