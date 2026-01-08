@@ -1,13 +1,13 @@
 Package: rpi-night-light
-Version: 0.1.0
+Version: 0.1.1
 Architecture: all
 Maintainer: chrisspen@gmail.com
 Depends: ddcutil, i2c-tools, systemd, build-essential, curl, ca-certificates
-Filename: ./rpi-night-light_0.1.0_all.deb
-Size: 2572
-MD5sum: a25a73aa8b5ecf14c7c8a8e9a4364de3
-SHA1: 323711a6b7cd749f168325301c058a77d2133ec5
-SHA256: 2f7cf1f47772957d44e1bac59fbd515bb6e0906983e6a652ee61c2e1c817f96b
+Filename: ./rpi-night-light_0.1.1_all.deb
+Size: 2570
+MD5sum: 714397c27ae170b22e7e9f64ba306ada
+SHA1: b71344c34b5012ec1296179bd2a11145227a99ea
+SHA256: 158285c78264f7d69711ef41a5101b81a16bf68dbbd83619e3eaac6d8afe41ae
 Section: utils
 Priority: optional
 Description: Dynamic monitor day/night tint via DDC/CI and sunwait
