@@ -1,2 +1,4 @@
 *.out
 *.geany
+build/
+*.deb

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# Day: neutral
+# shellcheck disable=SC1091
+source /etc/default/monitor-sun
+
+DISPLAY_ID="${DISPLAY_ID:-1}"
+DAY_R="${DAY_R:-50}"
+DAY_G="${DAY_G:-50}"
+DAY_B="${DAY_B:-50}"
+
+ddcutil --display "$DISPLAY_ID" setvcp 14 0x0b >/dev/null 2>&1 || true   # ensure User 1
+ddcutil --display "$DISPLAY_ID" setvcp 16 "$DAY_R" >/dev/null
+ddcutil --display "$DISPLAY_ID" setvcp 18 "$DAY_G" >/dev/null
+ddcutil --display "$DISPLAY_ID" setvcp 1A "$DAY_B" >/dev/null
+
+if [[ -n "${DAY_BRIGHTNESS:-}" ]]; then
+  ddcutil --display "$DISPLAY_ID" setvcp 10 "$DAY_BRIGHTNESS" >/dev/null
+fi
