@@ -1,0 +1,16 @@
+Package: rpi-night-light
+Version: 0.1.0
+Architecture: all
+Maintainer: rpi-night-light <noreply@example.com>
+Depends: ddcutil, i2c-tools, systemd
+Filename: ./rpi-night-light_0.1.0_all.deb
+Size: 2572
+MD5sum: a47c35be5c638236b7169934235ac532
+SHA1: f8bb2cdd8c065306d381974c1f56f098edd8b081
+SHA256: e599dd89677deadd47d8220ea8c4efda10d63bb23d260c30a7141401c16cff7b
+Section: utils
+Priority: optional
+Description: Dynamic monitor day/night tint via DDC/CI and sunwait
+ This package sets monitor color gains using DDC/CI and schedules day/night
+ transitions using sunwait and systemd.
+

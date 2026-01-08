@@ -1,0 +1,17 @@
+Date: Thu, 08 Jan 2026 02:32:00 +0000
+MD5Sum:
+ 62b4e261db3e3825289ea388c8b1f48f              577 Packages
+ d111da8af07b17c44fd106adba135ac7              412 Packages.gz
+ 85caa1c2eb2f310b29b2f86a1e62acc7               38 Release
+SHA1:
+ db2885921771b2c7de419a982f812339d95db89d              577 Packages
+ db309f8ae591058cc1981c174c296797a04d15d5              412 Packages.gz
+ f1ca901acf90a696eb385333b615def08f0074f7               38 Release
+SHA256:
+ aa9f6dfcb0ce08065d7c655f3075c6e6b3bc369ccecbf0c59bf62cc23675fc01              577 Packages
+ 5fb1665b0d04cf8822d856223e3cd4f31eb5a7267c3ca8b7abfaffe501c48cc1              412 Packages.gz
+ 88dba8b979be7ed6ed53d4b8a206225c4b04ad8e564e51bbf2309fd55127e615               38 Release
+SHA512:
+ 00fb3dd75d65b7c7d2de34b085bf15caa835e631d11f90b3c46da620526cae531ee0ac64edded758fa065fd70bf0c8ea28d68c8e4acca60009f1a5da85012b16              577 Packages
+ 6e091984c2ca32a864712f9f9980acfc48f6f8916111f2c148ebd29afb89c63651217f0bb7101c1b3d34884abf85b768f34aab9bd8f2a9304b03546721f21c3a              412 Packages.gz
+ fd555989e03b0ecbc442de0e3df3631f727e60afdb3ba2230d8a481997efadef4d3e441f7e5e528273a1f5ee6cb969ac0a9d4423a0d33e2c37677707d4b93cf4               38 Release
